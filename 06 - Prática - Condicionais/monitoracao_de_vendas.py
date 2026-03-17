@@ -1,4 +1,3 @@
-# Exercícios
 try:
     macas = int(input("Digite a quantidade de maçãs vendidas: "))
     bananas = int(input("Digite a quantidade de bananas vendidas: "))
