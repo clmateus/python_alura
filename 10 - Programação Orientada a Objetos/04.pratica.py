@@ -50,4 +50,3 @@ cliente2 = ClienteBanco(6,7,8,9,0)
 cliente3 = ClienteBanco('a','b','c','d','e')
 
 ClienteBanco.listar_clientes()
-
