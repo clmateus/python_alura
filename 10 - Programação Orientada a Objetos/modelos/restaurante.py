@@ -5,16 +5,22 @@ class Restaurante():
     def __init__(self, nome, categoria):
         self.nome = nome
         self.categoria = categoria
-        self.ativo = False
+        self._ativo = True
         Restaurante.restaurantes.append(self)
 
     # __str__ - Método que define o que o Python irá retornar quando o objeto for chamado.
     def __str__(self):
-        return f'{self.nome} | {self.categoria}'
+        return f'{self.nome} | {self.categoria} | {self._ativo}'
     
     def listar_restaurantes():
+        print(f'{"Nome do Restaurante".ljust(25)} | {"Categoria".ljust(25)} | Ativo')
         for restaurante in Restaurante.restaurantes:
-            print(f'{restaurante.nome} | {restaurante.categoria} | {restaurante.ativo}')
+            print(f'{restaurante.nome.ljust(25)} | {restaurante.categoria.ljust(25)} | {restaurante.ativo}')
+
+    # @property - Decorator que transforma um método em um atributo inteligente.
+    @property
+    def ativo(self):
+        return '☑' if self._ativo else '☐'
 
 restaurante_1 = Restaurante('McDonalds', 'Fast Food')
 # restaurante_1.nome = "McDonalds"
@@ -27,10 +33,10 @@ restaurante_2 = Restaurante('Burger King', 'Fast Food')
 # restaurante_2.ativo = False
 
 # dir - Lista todos os atributos de um objeto. Ideal para usar quando não conhecemos a classe.
-print(dir(restaurante_1))
+# print(dir(restaurante_1))
 
-# vars - Cria um dicionário com os atributos de um objeto.
-print(vars(restaurante_1))
+# # vars - Cria um dicionário com os atributos de um objeto.
+# print(vars(restaurante_1))
 
 # print(restaurante_1)
 # print(restaurante_2)
