@@ -1,17 +1,23 @@
 class Restaurante():
-    nome = ''
-    categoria = ''
-    ativo = False
+    # __init__ - Método que o Python executa automaticamente no exato momento da criação da instância de um objeto.
+    def __init__(self, nome, categoria):
+        self.nome = nome
+        self.categoria = categoria
+        self.ativo = False
 
-restaurante_1 = Restaurante()
-restaurante_1.nome = "McDonalds"
-restaurante_1.categoria = "Fast Food"
-restaurante_1.ativo = True
+    # __str__ - Método que define o que o Python irá retornar quando o objeto for chamado.
+    def __str__(self):
+        return f'{self.nome} | {self.categoria}'
 
-restaurante_2 = Restaurante()
-restaurante_2.nome = "Burger King"
-restaurante_2.categoria = "Fast Food"
-restaurante_2.ativo = False
+restaurante_1 = Restaurante('McDonalds', 'Fast Food')
+# restaurante_1.nome = "McDonalds"
+# restaurante_1.categoria = "Fast Food"
+# restaurante_1.ativo = True
+
+restaurante_2 = Restaurante('Burger King', 'Fast Food')
+# restaurante_2.nome = "Burger King"
+# restaurante_2.categoria = "Fast Food"
+# restaurante_2.ativo = False
 
 restaurantes = [restaurante_1, restaurante_2]
 
@@ -20,3 +26,6 @@ print(dir(restaurante_1))
 
 # vars - Cria um dicionário com os atributos de um objeto.
 print(vars(restaurante_1))
+
+print(restaurante_1)
+print(restaurante_2)
