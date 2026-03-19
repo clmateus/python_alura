@@ -1,4 +1,6 @@
-class Restaurante():
+from modelos.avaliacao import Avaliacao
+
+class Restaurante:
     restaurantes = []
 
     # __init__ - Método que o Python executa automaticamente no exato momento da criação da instância de um objeto.
@@ -6,6 +8,7 @@ class Restaurante():
         self.nome = nome.title()
         self.categoria = categoria.upper()
         self._ativo = False
+        self._avaliacao = []
         Restaurante.restaurantes.append(self)
 
     # __str__ - Método que define o que o Python irá retornar quando o objeto for chamado.
@@ -26,6 +29,10 @@ class Restaurante():
 
     def alternar_estado(self):
         self._ativo = not self._ativo
+
+    def receber_avaliacao(self, cliente, nota):
+        avaliacao = Avaliacao(cliente, nota)
+        self._avaliacao.append(avaliacao)
 
 # restaurante1 = Restaurante('McDonalds', 'Fast Food')
 # restaurante1.alternar_estado()
