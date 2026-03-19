@@ -27,13 +27,13 @@ class Restaurante():
     def alternar_estado(self):
         self._ativo = not self._ativo
 
-restaurante1 = Restaurante('McDonalds', 'Fast Food')
-restaurante1.alternar_estado()
-# restaurante1.nome = "McDonalds"
-# restaurante1.categoria = "Fast Food"
-# restaurante1.ativo = True
+# restaurante1 = Restaurante('McDonalds', 'Fast Food')
+# restaurante1.alternar_estado()
+# # restaurante1.nome = "McDonalds"
+# # restaurante1.categoria = "Fast Food"
+# # restaurante1.ativo = True
 
-restaurante2 = Restaurante('Burger King', 'Fast Food')
+# restaurante2 = Restaurante('Burger King', 'Fast Food')
 # restaurante2.nome = "Burger King"
 # restaurante2.categoria = "Fast Food"
 # restaurante2.ativo = False
@@ -47,4 +47,4 @@ restaurante2 = Restaurante('Burger King', 'Fast Food')
 # print(restaurante1)
 # print(restaurante2)
 
-Restaurante.listar_restaurantes()
+# Restaurante.listar_restaurantes()
