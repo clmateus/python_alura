@@ -18,9 +18,9 @@ class Restaurante:
     # @classmethod - Decorator que transforma um método genérico em um método da classe, em vez de um método do objeto.
     @classmethod
     def listar_restaurantes(cls):
-        print(f'{"Nome do Restaurante".ljust(25)} | {"Categoria".ljust(25)} | Ativo')
+        print(f'{"Nome do Restaurante".ljust(25)} | {"Categoria".ljust(25)} | {"Avaliação".ljust(25)} | Ativo')
         for restaurante in cls.restaurantes:
-            print(f'{restaurante.nome.ljust(25)} | {restaurante.categoria.ljust(25)} | {restaurante.ativo}')
+            print(f'{restaurante.nome.ljust(25)} | {restaurante.categoria.ljust(25)} | {str(restaurante.media_avaliacoes).ljust(25)} | {restaurante.ativo}')
 
     # @property - Decorator que transforma um método em um atributo inteligente.
     @property
