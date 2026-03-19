@@ -36,12 +36,12 @@ O objetivo é documentar minha evolução como desenvolvedor e servir como refer
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/clmateus/python_-_alura.git
+   git clone https://github.com/clmateus/python_alura.git
    ```
 
 2. Acesse a pasta desejada:
    ```bash
-   cd python_-_alura/exercicios
+   cd python_alura/exercicios
    ```
 
 3. Execute o arquivo Python:
