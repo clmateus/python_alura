@@ -6,6 +6,9 @@ restaurante1 = Restaurante('McDonalds', 'Fast Food')
 bebida1 = Bebida('Suco de Melancia', 5.00, 'Grande')
 prato1 = Prato('Bife com Fritas', 20, 'Arroz, feijão, contra-filé e fritas')
 
+bebida1.aplicar_desconto()
+prato1.aplicar_desconto()
+
 restaurante1.adicionar_no_cardapio(bebida1)
 restaurante1.adicionar_no_cardapio(prato1)
 
