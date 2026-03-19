@@ -6,9 +6,11 @@ restaurante1 = Restaurante('McDonalds', 'Fast Food')
 bebida1 = Bebida('Suco de Melancia', 5.00, 'Grande')
 prato1 = Prato('Bife com Fritas', 20, 'Arroz, feijão, contra-filé e fritas')
 
+restaurante1.adicionar_no_cardapio(bebida1)
+restaurante1.adicionar_no_cardapio(prato1)
+
 def main():
-    print(bebida1)
-    print(prato1)
+    restaurante1.exibir_cardapio
 
 if __name__ == '__main__':
     main()
