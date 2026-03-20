@@ -1,3 +1,5 @@
+# uvicorn - Uvicorn é um servidor web para o Python
+# Para usar o Uvicorn, é necessário usar o comando no terminal: 'uvicorn main:app --reload'
 # fastapi - Biblioteca que serve para criar APIs
 from fastapi import FastAPI
 
